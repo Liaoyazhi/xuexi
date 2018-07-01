@@ -1,8 +1,8 @@
 # HTML5规则
 
-#### 规则1：文档里不能出现废弃标签（error）
+#### 规则1：文档里不能出现废弃标签
 ```html
-centent,font,s,strike,b,u,isindex,basefont,dir,applet
+centent,font,s,strike,b,u,isindex,basefont,dir,applet（error）
 ```
 #### 规则2：html标签
 html标签是用于创建一个HTML文档，必须得包含head、body两个标签，如果没有就是错误的。
