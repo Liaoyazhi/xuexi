@@ -158,7 +158,7 @@ type属性的值有：button、checkbox、file、hidden、image、password、rad
 <input type="checkbox" name="复选框">
 <input type="file" name="文件上传">
 <input type="hidden" name="隐藏">
-<input type="image" name="图像">
+<input type="image" name="图像" alt="图像">
 <input type="password" name="密码" placeholder="请输入密码">
 <input type="radio" name="单选按钮" checked>
 <input type="reset" name="重置" disabled>
