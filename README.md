@@ -36,5 +36,21 @@ meta标签是定义关于HTML的元信息，它的必须属性是content
 ```html
 <meta name="keywords" content="HTML5">
 ```
+#### 规则5：link标签
+link标签是链接外部资源的，必须属性是src、rel
+```html
+<link src="css/style.css" rel="stylesheet">
+```
+#### 规则6：script标签
+script标签有两种写法
 
-
+第一种是链接外部资源，下面写法是链接外部资源的
+```html
+<script src="js/js.js"></script>
+```
+第二种是在script标签里面直接js脚本代码
+```html
+<script>
+document.write("Hello World!");
+</script>
+```
