@@ -153,28 +153,97 @@ disabled 禁用此元素
 autofocus 首次加载自动获取焦点
 
 type属性的值有：button、checkbox、file、hidden、image、password、radio、reset、submit、tel、email、date、month、week、time、number、rang、color、datetime-local、url、search、datetime、text
+
+Button
 ```html
 <input type="button" name="按钮" value="按钮">
+```
+Checkbox
+```html
 <input type="checkbox" name="复选框">
+```
+File
+```html
 <input type="file" name="文件上传">
+```
+Hidden
+```html
 <input type="hidden" name="隐藏">
+```
+Image
+```html
 <input type="image" name="图像" alt="图像">
+```
+Password
+```html
 <input type="password" name="密码" placeholder="请输入密码">
+```
+Radio
+```html
 <input type="radio" name="单选按钮" checked>
+```
+Reset
+```html
 <input type="reset" name="重置" disabled>
+```
+Submit
+```html
 <input type="submit" name="提交" value="提交">
+```
+
+Tel
+```html
 <input type="tel" name="电话" value="请输入电话">
+```
+Email
+```html
 <input type="email" name="邮箱" value="请输入邮箱">
+```
+Date
+```html
 <input type="date" name="日期">
+```
+Month
+```html
 <input type="month" name="月份">
+```
+Week
+```html
 <input type="week" name="周">
+```
+Time
+```html
 <input type="time" name="时间">
+```
+Number
+```html
 <input type="number" name="数字">
+```
+Rang
+```html
 <input type="rang" name="范围">
+```
+Color
+```html
 <input type="color" name="颜色">
+```
+datetime-local
+```html
 <input type="datetime-local" name="日期时间">
+```
+Url
+```html
 <input type="url" name="链接">
+```
+Search
+```html
 <input type="search" name="搜索">
+```
+datetime
+```html
 <input type="datetime" name="日期时间">
+```
+Texl
+```html
 <input type="text" name="文本" value="请输入文本信息" autofocus>
 ```
