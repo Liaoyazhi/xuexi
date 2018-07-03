@@ -247,3 +247,37 @@ Texl
 ```html
 <input type="text" name="文本" value="请输入文本信息" autofocus>
 ```
+#### 规则18：p标签
+p标签是定义段落
+```html
+<p>这是第一个段落</p>
+```
+#### 规则19：button标签
+button标签是定义按钮，它的常用属性是type、value、name、autofocus、disabled
+
+type属性的值分别有：button、submit、reset
+
+Button
+该按钮是可点击的按钮
+```html
+<button type=“button” value=“按钮”></button>
+```
+Submit
+该按钮是可提交按钮
+```html
+<button type=“submit” value=“提交”></button>
+```
+Reset
+该按钮是重置按钮（清除表单数据）
+```html
+<button type=“reset” value=“重置”></button>
+```
+#### 规则20：select标签
+select标签是定义下拉列表，它里面必须得包含option标签，否则是错误的。
+```html
+<select>
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+</select>
+```
