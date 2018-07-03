@@ -2,9 +2,9 @@
 
 #### 规则1：文档里不能出现废弃标签
 ```html
-<centent>, <font>,s,strike,b,u,isindex,basefont,dir,applet
+<centent>,<font>,<s>,<strike>,<b>,<u>,<isindex>,<basefont>,<dir>,<applet>
 ```
-#### 规则2：html标签里必须包含`<head>`、`<body>`两个标签
+#### 规则2：`<html>`里必须包含`<head>`、`<body>`两个标签
 
 示例如下：
 
@@ -20,63 +20,72 @@
 </html>
 ```
 
-#### 规则3：head标签
-head标签是HTML文档的头部，包含了meta标签、title标签，使用脚本，样式等标签。
+#### 规则3：`<title>`内容不能为空
 
-注：meta和title标签是必须的。
+示例如下：
+
 ```html
-<head>
-  <meta charset="UTF-8">
-  <title>文档标题</title>
-  <link href="css/style.css" rel="stylesheet">
-  <script src="js/js.js"></script>
-</head>
+<title>文档标题</title>
 ```
-#### 规则4：meta标签
-meta标签是定义关于HTML的元信息，它的必须属性是content。
+
+#### 规则4：charset属性是必须放到`<meta>`
+
+示例如下：
+
 ```html
-<meta name="keywords" content="HTML5">
+<meta charset="utf-8">
 ```
-#### 规则5：link标签
-link标签是链接外部资源的，必须属性是src、rel。
+
+#### 规则5：`<link>`元素里必须属性是src、rel
+
+示例如下：
+
 ```html
 <link src="css/style.css" rel="stylesheet">
 ```
-#### 规则6：script标签
-script标签有两种写法
 
-第一种是链接外部资源，下面写法是链接外部资源的。
+#### 规则6：`<script>`除里src属性外，不能有别的属性
+
+示例如下：
+
 ```html
 <script src="js/js.js"></script>
 ```
-第二种是在script标签里面直接js脚本代码。
+
+#### 规则7：所有标签、属性、属性值必须都是小写
+
+示例如下：
+
 ```html
-<script>
-document.write("Hello World!");
-</script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+  </head>
+  <body>
+    <h1>我是第一个标题</h1>
+    <p>我是第一个段落</p>
+  </body>
+</html>
 ```
-#### 规则7：body标签
-body标签是HTML文档的主体标签，是HTMl文档必不可少的一个标签。
-```html5
+#### 规则8：`<h1>`在HTML文档页面中只能出现一个，`<h2>～<h6>`是可以出现多个
+
+示例如下：
+
+```html
 <body>
-我是主体
+  <h1>标题1</h1>
+  <h2>标题2</h2>
+  <h2>标题2</h2>
 </body>
 ```
-#### 规则8：section标签
-section标签是定位文档中的节，比如章节、页眉、页脚或文档中的其他部分，是HTML5中的新标签。
+#### 规则9：在HTML文档里面`<p>`内容不能为空
+
+示例如下：
+
 ```html
-<section>
-  <h1>PRC</h1>
-  <p>The People's Republic of China was born in 1949...</p>
-</section>
-```
-#### 规则9：article标签
-article标签是定义文章，是HTML5中的新标签。
-```html
-<article>
-  <h1>标题</h1>
-  <p>文章内容</p>
-</article>
+<p>我是第一个段路</p>
+<p>我是第二个段路</p>
 ```
 #### 规则10：aside标签
 aside标签是定义侧边栏，是HTML5中的新标签。
@@ -91,10 +100,7 @@ nav定义导航链接的部分，是HTML5中的新标签。
   <a href="about.html">About</a>
 </nav>
 ```
-#### 规则12：main标签
-main标签是定义网站页面里面主体内容的，是HTML5中的新标签。
-
-注：一个HTML文档里面只能出现一个main标签，不能出现多个，不能包含header标签、footer标签、article标签，否则就是错误的。
+#### 规则12：一个HTML文档里面只能出现一个`<main>`，不能包含`<header>`、`<footer>`、`<article>`
 ```html
 <body>
   <header>页眉</header>
