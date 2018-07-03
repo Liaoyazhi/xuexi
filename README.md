@@ -2,16 +2,16 @@
 
 #### 规则1：文档里不能出现废弃标签
 ```html
-centent,font,s,strike,b,u,isindex,basefont,dir,applet（error）
+<centent>, <font>,s,strike,b,u,isindex,basefont,dir,applet
 ```
-#### 规则2：html标签
-html标签是用于创建一个HTML文档，必须得包含head、body两个标签，如果没有就是错误的。
+#### 规则2：html标签里必须包含`<head>`、`<body>`两个标签
 
-下面我们建立一个简单的HTML5的文档。
+示例如下：
+
 ```html
-<html>
+<html lang="zh-Hans">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>文档标题</title>
   </head>
   <body>
@@ -19,6 +19,7 @@ html标签是用于创建一个HTML文档，必须得包含head、body两个标�
   </body>
 </html>
 ```
+
 #### 规则3：head标签
 head标签是HTML文档的头部，包含了meta标签、title标签，使用脚本，样式等标签。
 
