@@ -453,3 +453,96 @@ Your browser does not support the audio element.
 Your browser does not support the audio element.
 </audio>
 ```
+
+## 规则30：双标签必须闭合
+
+正确：
+
+```html
+<p>hello</p>
+```
+
+错误：
+
+```html
+<p>hello
+```
+
+## 规则31：`<html>`必须包含属性`lang`
+
+正确：
+
+```html
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+  </head>  
+  <body>文档内容</body>
+</html>
+```
+
+错误：
+```html
+<html >
+   <head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+  </head>  
+  <body>文档内容</body>
+</html>
+```
+
+## 规则32：所有元素里不能出现重复属性
+
+正确：
+
+```html
+<p class="index">段落</p>
+```
+
+错误：
+
+```html
+<p class="index" class="index1">段落</p>
+```
+
+## 规则33：`<input>`的`type`的属性值为`radio`的时候必须包含`name`属性
+
+正确：
+
+```html
+<input type="radio" name="sex">男
+<input type="radio" name="sex">女
+```
+
+错误：
+
+```html
+<input type="radio">男
+<input type="radio">女
+```
+
+## 规则34：`<input>`的`type`的属性值为`img`的时候必须包含`src`、`alt`属性
+
+正确：
+
+```html
+<input type="img" src="logo.png" alt="logo">
+```
+
+错误：
+
+```html
+<input type="img" src="logo.png">
+```
+
+## 规则35：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+
+## 规则36：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+
+## 规则37：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+
+## 规则38：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+
+## 规则39：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
