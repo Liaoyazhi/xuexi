@@ -87,7 +87,7 @@
 正确：
 
 ```html
-<body id="index">文档内容</body>
+<body id="index">文档内容</body>
 ```
 
 错误
@@ -96,7 +96,7 @@
 <body id="INDEX">文档内容</body>
 ```
 
-## 规则10：`id`只能是唯一
+## 规则10：`id`只能是唯一
 
 正确：
 
