@@ -59,7 +59,7 @@
 正确：
 
 ```html
-<body>文档内容</body>
+<body>文档内容</body>
 ```
 
 错误
@@ -73,7 +73,7 @@
 正确：
 
 ```html
-<body id="index">文档内容</body>
+<body id="index">文档内容</body>
 ```
 
 错误
@@ -87,32 +87,32 @@
 正确：
 
 ```html
-<body id="index">文档内容</body>
+<body id="index">文档内容</body>
 ```
 
 错误
 
 ```html
-<body id="INDEX">文档内容</body>
+<body id="INDEX">文档内容</body>
 ```
 
-## 规则10：id只能是唯一
+## 规则10：`id`只能是唯一
 
 正确：
 
 ```html
-<body>
-  <p id="index">文档内容</p>
-  <p id="home">文档内容</p>
+<body>
+  <p id="index">文档内容</p>
+  <p id="home">文档内容</p>
 </body>
 ```
 
 错误
 
 ```html
-<body>
-  <p id="index">文档内容</p>
-  <p id="index">文档内容</p>
+<body>
+  <p id="index">文档内容</p>
+  <p id="home">文档内容</p>
 </body>
 ```
 
@@ -157,7 +157,7 @@
   </head>
   <body>
     <aside>侧边栏内容</aside>
-    <main>主体内容</main>
+    <main>主体内容</main>
   </body>
 </html>
 ```
@@ -173,7 +173,7 @@
   <body>
     <aside>
       侧边栏内容
-      <main>主体内容</main>
+      <main>主体内容</main>
     </aside>
   </body>
 </html>
@@ -192,7 +192,7 @@
   <body>
     <header>页眉</header>
     <nav>链接</nav>
-    <main>主体内容</main>
+    <main>主体内容</main>
     <footer>页尾</footer>
   </body>
 </html>
@@ -209,7 +209,7 @@
   <body>
     <header>页眉</header>
     <nav>
-      <main>主体内容</main>
+      <main>主体内容</main>
     </nav>
     <footer>页尾</footer>
   </body>
@@ -267,7 +267,7 @@
   </nav>
   <aside>侧边栏</aside>
   <main>内容</main>
-  <footer>页脚</footer>
+  <footer>页脚</footer>
 </header>
 ```
 
@@ -313,7 +313,6 @@
 <img src="login.img" alt="登陆">
 ```
 
-
 错误：
 
 ```html
@@ -350,7 +349,7 @@
 
 ```html
 <select>
- <p>选项1</p>
+  <p>选项1</p>
 </select>
 ```
 
@@ -445,7 +444,7 @@
 <embed width="200" height="200" />
 ```
 
-## 规则28：`<video>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+## 规则28：`<video>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
 
 正确：
 
@@ -467,7 +466,7 @@ your browser does not support the video tag
 </video>
 ```
 
-## 规则29：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+## 规则29：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
 
 正确：
 
@@ -634,7 +633,7 @@ Your browser does not support the audio element.
    <input type="range" id="a" value="50">100
    +<input type="number" id="b" value="50">
    =<output name="x" for="a b"></output>
-</form> 
+</form>
 ```
 
 错误：
@@ -644,7 +643,7 @@ Your browser does not support the audio element.
    <input type="range" id="a" value="50">100
    +<input type="number" id="b" value="50">
    =<output for="a b"></output>
-</form> 
+</form>
 ```
 
 ## 规则38：`<meter>`必须包含属性`value`
@@ -652,13 +651,13 @@ Your browser does not support the audio element.
 正确：
 
 ```html
-<meter value="0.6">60%</meter> 
+<meter value="0.6">60%</meter>
 ```
 
 错误：
 
 ```html
-<meter>60%</meter> 
+<meter>60%</meter>
 ```
 
 ## 规则39：`<progress>`必须包含属性`value`
