@@ -3,7 +3,7 @@
 ## 规则1：文档里不能出现废弃标签
 
 ```html
-<centent>,<font>,<s>,<strike>,<b>,<u>,<isindex>,<basefont>,<dir>,<applet>
+<centent>,<font>,<s>,<strike>,<b>,<i>,<tt>,<small>,<frame>,<acronym>,<big>,<u>,<isindex>,<basefont>,<dir>,<applet>
 ```
 
 ## 规则2：`<html>`里必须包含`<head>`，`<body>`
@@ -147,7 +147,7 @@
 
 ## 规则13：`<aside>`不能包含`<main>`
 
-示例如下：
+正确：
 
 ```html
 <html lang="zh-Hans">
@@ -162,9 +162,26 @@
 </html>
 ```
 
+错误：
+
+```html
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+  </head>
+  <body>
+    <aside>
+      侧边栏内容
+      <main>主体内容</main>
+    </aside>
+  </body>
+</html>
+```
+
 ## 规则14：`<nav>`不能包含`<main>`、`<header>`、`<footer>`
 
-示例如下：
+正确：
 
 ```html
 <html lang="zh-Hans">
@@ -176,6 +193,24 @@
     <header>页眉</header>
     <nav>链接</nav>
     <main>主体内容</main>
+    <footer>页尾</footer>
+  </body>
+</html>
+```
+
+错误：
+
+```html
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <title>文档标题</title>
+  </head>
+  <body>
+    <header>页眉</header>
+    <nav>
+      <main>主体内容</main>
+    </nav>
     <footer>页尾</footer>
   </body>
 </html>
@@ -483,6 +518,7 @@ Your browser does not support the audio element.
 ```
 
 错误：
+
 ```html
 <html >
    <head>
@@ -537,12 +573,104 @@ Your browser does not support the audio element.
 <input type="img" src="logo.png">
 ```
 
-## 规则35：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+## 规则35：不能出现废弃属性
 
-## 规则36：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+示例如下：
 
-## 规则37：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+| 属性 | 所属的元素 |
+| ---- | ---- |
+| manifest | html |
+| xmlns | html,title |
+| align | caption, iframe, img, input, object, legend, table, hr, div, h1, h2, h3, h4, h5, h6, p, col, colgroup, tbody, td, tfoot, th, thead and tr |
+| alink | body |
+| link | body |
+| vlink | body |
+| text | body |
+| background | body |
+| bgcolor | table, tr, td, th and body |
+| border | table and object, img|
+| char | col, colgroup, tbody, td, tfoot, th, thead and tr |
+| charoff | col, colgroup, tbody, td, tfoot, th, thead and tr |
+| compact | dl , ol and ul |
+| frame | table |
+| frameborder | iframe |
+| hspace | img and object |
+| nowrap | td and th|
+| rules | table |
+| type | li, ol and ul |
+| value | li |
+| valign | col, colgroup, tbody, td, tfoot, th, thead and tr |
+| width | hr, table, td, th, col, colgroup and pre |
+| accept | form |
+| vspace | img |
+| charset | a, link |
+| coords | a |
+| name | a |
+| rev | a, link |
+| shape |
+| target | link |
+| height | th, td |
 
-## 规则38：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+## 规则36：内联元素不能包含块元素
 
-## 规则39：`<audio>`必须包含属性`controls`并且必须包含`<source>`和`<source>`的`src`属性
+正确：
+
+```html
+<a href="http://www.baidu.com"><img src="logo.png" alit="百度"></a>
+```
+
+错误：
+
+```html
+<a href="http://www.baidu.com"><p>百度</p></a>
+```
+
+## 规则37：`<output>`必须包含属性`name`、`for`
+
+正确：
+
+```html
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+   <input type="range" id="a" value="50">100
+   +<input type="number" id="b" value="50">
+   =<output name="x" for="a b"></output>
+</form> 
+```
+
+错误：
+
+```html
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+   <input type="range" id="a" value="50">100
+   +<input type="number" id="b" value="50">
+   =<output for="a b"></output>
+</form> 
+```
+
+## 规则38：`<meter>`必须包含属性`value`
+
+正确：
+
+```html
+<meter value="0.6">60%</meter> 
+```
+
+错误：
+
+```html
+<meter>60%</meter> 
+```
+
+## 规则39：`<progress>`必须包含属性`value`
+
+正确：
+
+```html
+<<progress value="0.9">90%</progress>
+```
+
+错误：
+
+```html
+<progress>90%</progress>
+```
