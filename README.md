@@ -3,7 +3,7 @@
 ## 规则1：文档里不能出现废弃标签
 
 ```html
-<centent>,<font>,<s>,<strike>,<b>,<i>,<tt>,<small>,<frame>,<acronym>,<big>,<u>,<isindex>,<basefont>,<dir>,<applet>
+<center>,<font>,<s>,<strike>,<b>,<i>,<tt>,<small>,<frame>,<acronym>,<big>,<u>,<isindex>,<basefont>,<dir>,<applet>
 ```
 
 ## 规则2：`<html>`里必须包含`<head>`，`<body>`
