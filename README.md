@@ -1,12 +1,12 @@
 # HTML5规则
 
-## 规则1：文档里不能出现废弃标签
+<!-- ## 规则1：文档里不能出现废弃标签
 
 ```html
 <center>,<font>,<s>,<strike>,<b>,<i>,<tt>,<small>,<frame>,<acronym>,<big>,<u>,<isindex>,<basefont>,<dir>,<applet>
-```
+``` -->
 
-## 规则2：`<html>`里必须包含`<head>`，`<body>`
+<!-- ## 规则2：`<html>`里必须包含`<head>`，`<body>`
 
 示例如下：
 
@@ -20,7 +20,7 @@
   文档内容
   </body>
 </html>
-```
+``` -->
 
 ## 规则3：`<title>`内容不能为空
 
